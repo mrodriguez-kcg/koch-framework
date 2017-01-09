@@ -50,6 +50,9 @@ p a {
 	-moz-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 }
+.blue-bg p a {
+	color:#fff;
+}
 ul {
 
 }
@@ -66,11 +69,29 @@ li {
 .white {
 	color:#fff;
 }
+.black {
+	color:#000;
+}
 .blue {
 	color:#00a8e1;
 }
-.slate {
-	color:#222;
+.dark-blue {
+	color:#002d5b;
+}
+
+
+/*Background Colors*/
+.white-bg {
+	background:#fff;
+}
+.black-bg {
+	background:#000;
+}
+.blue-bg {
+	background:#00a8e1;
+}
+.dark-blue-bg {
+	background:#002d5b;
 }
 
 /*Buttons*/
@@ -141,7 +162,10 @@ li {
 .temp-margin {
 	margin:2rem auto;
 }
-
+section {
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
 
 
 
