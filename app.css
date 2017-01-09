@@ -1,3 +1,6 @@
+/*Using Foundation as core framework*/
+
+
 *, *:before, *:after {
 	-moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
 	-webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
