@@ -1,0 +1,215 @@
+/*Using Foundation as core framework*/
+
+
+*, *:before, *:after {
+	-moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
+	-webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
+	box-shadow: 0 0 5px rgba(0,168,225,.5);
+} 
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+/*Typography*/
+h1 {
+	margin:0 auto;
+	font-size: 3.75rem;
+	font-family: "azo-sans-web",sans-serif;
+	font-weight: 600;
+	line-height:4.5rem;
+}
+h2 {
+	display: block;
+	margin: 0 0 .75rem 0;
+	font-size: 2.5rem;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 400;
+	line-height:3rem;
+}
+h3 {
+	margin: 0 0 .75rem 0;
+	font-size: 1.8rem;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 600;
+	line-height:2.3rem;
+}
+h4 {
+	display: block;
+	margin: 0 0 .5rem 0;
+	font-size: 1.15rem;
+	line-height:1.65rem;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+p {
+	font-size:.875rem;
+}
+p a {
+	font-weight: 600;
+	color: #00a8e1;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+.blue-bg p a {
+	color:#fff;
+}
+ul {
+
+}
+li {
+	font-size:.875rem;
+}
+
+/*Tools*/
+.text-center {
+	text-align:center;
+}
+
+/*Colors*/
+.white {
+	color:#fff;
+}
+.black {
+	color:#000;
+}
+.blue {
+	color:#00a8e1;
+}
+.dark-blue {
+	color:#002d5b;
+}
+
+
+/*Background Colors*/
+.white-bg {
+	background:#fff;
+}
+.black-bg {
+	background:#000;
+}
+.blue-bg {
+	background:#00a8e1;
+}
+.dark-blue-bg {
+	background:#002d5b;
+}
+
+/*Buttons*/
+.button {
+	display: inline-block;
+	padding: .5rem 1.75rem;
+	margin:.5rem auto;
+	font-family: "proxima-nova",sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+	border-radius: .175rem;
+	text-transform: uppercase;
+	transition: all .25s ease-out;
+	cursor: pointer;
+}
+.button.button_style_1 {
+	color: #002d5b;
+	border: 1px solid #00a8e1;
+	background: #fff;
+}
+.button.button_style_1:hover {
+	color: #fff;
+	background: #00a8e1;
+	border: 1px solid #00a8e1;
+}
+
+/*Section Headers*/
+.header-with-background {
+	background: url("assets/img/example-header.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top:20rem;
+	padding-bottom:15rem;
+}
+
+/*CTA*/
+.cta {
+	display:block;
+	width:100%;
+}
+.cta-with-background {
+	background-repeat:none;
+	background-position:center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.cta-large {
+	padding-top:15rem;
+	padding-bottom:15rem;
+}
+.cta-medium {
+	padding-top:10rem;
+	padding-bottom:10rem;
+}
+.cta-small {
+	padding-top:5rem;
+	padding-bottom:5rem;	
+}
+
+
+
+/*Temp Styles*/
+.temp-margin {
+	margin:2rem auto;
+}
+section {
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
