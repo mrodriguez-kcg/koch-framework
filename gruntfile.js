@@ -17,11 +17,10 @@ module.exports = function(grunt) {
     sass: {                              // Task
       dist: {                            // Target
         options: {                       // Target options
-          style: 'compressed',
-          loadPath: require('node-bourbon').includePaths
+          style: 'compressed'
         },
         files: {                         // Dictionary of files
-          'dist/assets/css/style.css': 'src/assets/css/style.scss'
+          'dist/assets/css/app.css': 'src/assets/css/app.scss'
         }
       }
     },
@@ -30,7 +29,10 @@ module.exports = function(grunt) {
         build: {
             options: {},
             files: {
-              "dist/index.html": "src/index.html"
+              "dist/index.html": "src/index.html",
+              "dist/touch.html": "src/touch.html",
+              "dist/about/index.html": "src/about/index.html",
+              "dist/contact/index.html": "src/contact/index.html"
             }
         }
     },
@@ -38,14 +40,18 @@ module.exports = function(grunt) {
 
     watch: { 
       sass: {
-        files: ['src/assets/css/*.scss', 'src/buildingopportunity/assets/css/style.scss'],
-        tasks: ['newer:sass'],
+        files: ['src/assets/css/*.scss'],
+        tasks: ['sass'],
         options : { nospawn : true, relative:true }
       },
       bake: {
         files: ['src/**/*.html', 'src/*.html', 'includes/*.html'],
-        tasks: ['newer:bake', 'injector']
+        tasks: ['bake']
       }
+    },
+
+    touch: {
+      target: ['*.html']
     }
      
 
@@ -60,4 +66,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-bake');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-touch');
+
 };
