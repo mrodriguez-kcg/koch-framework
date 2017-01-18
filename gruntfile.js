@@ -30,13 +30,25 @@ module.exports = function(grunt) {
             options: {},
             files: {
               "dist/index.html": "src/index.html",
-              "dist/touch.html": "src/touch.html",
-              "dist/about/index.html": "src/about/index.html",
-              "dist/contact/index.html": "src/contact/index.html"
+              "dist/modules-full-width.html": "src/modules-full-width.html",
+              "dist/modules-headers.html": "src/modules-headers.html",
+              "dist/modules-home.html": "src/modules-home.html",
+              "dist/modules-partial-width.html": "src/modules-partial-width.html"
             }
         }
     },
 
+    copy: {
+      main: {
+        files: [
+          {src: ['src/assets/js/app.js'], dest: 'dist/assets/js/app.js'},
+          {src: ['src/assets/js/vendor/foundation.js'], dest: 'dist/assets/js/vendor/foundation.js'},
+          {src: ['src/assets/js/vendor/foundation.min.js'], dest: 'dist/assets/js/vendor/foundation.min.js'},
+          {src: ['src/assets/js/vendor/jquery.js'], dest: 'dist/assets/js/vendor/jquery.js'},
+          {src: ['src/assets/js/vendor/what-input.js'], dest: 'dist/assets/js/vendor/what-input.js'},
+        ]
+      }
+    },
 
     watch: { 
       sass: {
@@ -47,12 +59,19 @@ module.exports = function(grunt) {
       bake: {
         files: ['src/**/*.html', 'src/*.html', 'includes/*.html'],
         tasks: ['bake']
+      },
+      copy: {
+        files: ['src/assets/js/*.js', 'src/assets/js/vendor/*.js'],
+        tasks: ['copy']
       }
     },
 
     touch: {
       target: ['*.html']
     }
+
+
+
      
 
   });
@@ -67,5 +86,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bake');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-touch');
-
+  grunt.loadNpmTasks['grunt-contrib-copy'];
 };
