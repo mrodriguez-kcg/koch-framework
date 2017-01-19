@@ -1,12 +1,13 @@
 /*Using Foundation as core framework*/
 
 
-*, *:before, *:after {
-	-moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
-	-webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
-	box-shadow: 0 0 5px rgba(0,168,225,.5);
-} 
-// Test 
+// *, *:before, *:after {
+// 	-moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
+// 	-webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
+// 	box-shadow: 0 0 5px rgba(0,168,225,.5);
+// } 
+
+
 /*Typography*/
 h1 {
 	margin:0 auto;
@@ -120,7 +121,7 @@ li {
 
 /*Section Headers*/
 .header-with-background {
-	background: url("assets/img/example-header.jpg") no-repeat center center; 
+	background: url("/assets/img/example-header.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
