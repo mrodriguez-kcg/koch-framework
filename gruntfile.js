@@ -17,7 +17,8 @@ module.exports = function(grunt) {
     sass: {                              // Task
       dist: {                            // Target
         options: {                       // Target options
-          style: 'compressed'
+          style: 'compressed',
+          loadPath: require('node-bourbon').includePaths
         },
         files: {                         // Dictionary of files
           'dist/assets/css/app.css': 'src/assets/css/app.scss'

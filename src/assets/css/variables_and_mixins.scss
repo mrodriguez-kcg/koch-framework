@@ -1,0 +1,54 @@
+/*--bourbon library import--*/
+    @import "bourbon";
+/*--END bourbon library import--*/
+
+//Generic Colors
+$white:#fff;
+$black:#000;
+$dark-gray:#444;
+
+//Koch Colors
+$blue:#00A8E1;
+$dark-blue:#002D5B;
+
+
+
+/*--COLORS--*/
+  $white: #ffffff;
+  $black: #000000;
+
+  $dark_blue: #002d5b;
+  $dark_blue_2: #00468e;
+  $blue: #00a8e1;
+  $light_blue: #26abff;
+  $soft_blue: #96c6d4;
+  
+  $dark_gray: #444444;
+  $gray: #333740;
+  $light_gray: #ebeced;
+  $super_light_gray: #f6f6f7;
+  
+  $facebook_blue: #3b5998;
+  $twitter_blue: #55acee;
+  $linked_in_blue : #007bb6;
+  $glassdoor_green: #7cb228;
+  $google_plus_red: #dd4b39;
+  $youtube_red: #e52d27;
+
+  $koch_ind_blue: #005b7c;
+  $koch_ind_light_blue: #63cbe8;
+  $koch_ind_soft_blue: #c2e7f2;
+  $koch_ind_light_gray: #ebeced;
+/*--END COLORS--*/
+
+
+
+/*--FONTS--*/
+  $header_font: "azo-sans-web",sans-serif;
+  $sans_serif_font: "proxima-nova", sans-serif;
+  $slab_font: "museo-slab",serif;
+/*--END FONTS--*/
+
+
+
+/*--END MIXINS--*/
