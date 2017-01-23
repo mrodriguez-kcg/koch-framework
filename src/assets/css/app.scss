@@ -5,6 +5,15 @@
 /*Using Foundation as core framework*/
 
 /*Temporary Styles*/
+
+.temp-social-container li {
+	display:inline-block;
+	list-style:none;
+}
+.row.dark-gray-bg {
+	padding:2rem 0;
+}
+
 // *, *:before, *:after {
 // 	-moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
 // 	-webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
@@ -27,7 +36,7 @@ h1 {
 	margin:0 auto;
 	font-size: 3.75rem;
 	// font-family: "azo-sans-web",sans-serif;
-	font-family: "proxima-nova",sans-serif;
+	font-family:$sans-serif;
 	font-weight: 800;
 	line-height:3.938rem;
 	color: #00A8E1;
@@ -35,14 +44,14 @@ h1 {
 h2 {
 	display: block;
 	font-size: 2.5rem;
-	font-family: "proxima-nova",sans-serif;
+	font-family:$sans-serif;
 	font-weight: 400;
 	line-height:2.688rem;
 	color: #00A8E1;
 }
 h3 {
 	font-size:1.750rem;
-	font-family: "proxima-nova",sans-serif;
+	font-family:$sans-serif;
 	font-weight: 400;
 	line-height:2.125em;
 	color: #00A8E1;
@@ -51,13 +60,13 @@ h4 {
 	display: block;
 	font-size:1.125rem;
 	line-height:1.375em;
-	font-family: "proxima-nova",sans-serif;
+	font-family:$sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 p {
 	font-size:.875rem;
-	font-family: "proxima-nova",sans-serif;
+	font-family:$sans-serif;
 	line-height:1.375rem;
 }
 p a {
@@ -128,7 +137,7 @@ li {
 	display: inline-block;
 	padding:0.563rem 2.813rem;
 	margin:.5rem auto;
-	font-family: "proxima-nova",sans-serif;
+	font-family:$sans-serif;
 	font-size:.875rem;
 	line-height:.875rem;
 	font-weight: 700;
@@ -258,6 +267,236 @@ section {
 }
 
 
+//Iconography 
+.icon {
+	display:inline-block;
+	position:relative;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width:2.375rem;
+    height:2.375rem;
+    font-size:1.25rem;
+    -webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	border-radius:50%;
+    &::before {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    }
+	&.facebook {
+		&::before{
+			content:'\f09a';
+			color:rgba(59,89,152,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(59,89,152,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(59,89,152,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.twitter {
+		&::before{
+			content:'\f099';
+			color:rgba(29,161,242,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(29,161,242,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(29,161,242,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.linkedin {
+		&::before{
+			content:'\f0e1';
+			color:rgba(0,119,181,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(0,119,181,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(0,119,181,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.youtube {
+		&::before{
+			content:'\f16a';
+			color:rgba(229,45,39,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(229,45,39,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(229,45,39,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.google {
+		&::before{
+			content:'\f0d5';
+			color:rgba(211,72,54,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(211,72,54,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(211,72,54,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.snapchat {
+		&::before{
+			content:'\f2ac';
+			color:rgba(0,0,0,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(0,0,0,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(0,0,0,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.instagram {
+		&::before{
+			content:'\f16d';
+			color:rgba(0,0,0,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					color:rgba(0,0,0,1);
+				}
+			}
+		}
+		&:hover {
+			background:rgba(0,0,0,1);
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.glassdoor {
+		&::before{
+			content:'';
+			background:url("/assets/img/glassdoor-icon.svg")no-repeat;
+			width: 13px;
+			height: 23px;
+			display:inline-block;
+			fill:#7CB228;
+		}
+		&:hover {
+			&::before {
+				fill:#fff;
+			}
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+
+
+
+
+	&.facebook {
+		&::before{
+			content:'\f09a';
+			color:rgba(59,89,152,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+	&.facebook {
+		&::before{
+			content:'\f09a';
+			color:rgba(59,89,152,1);
+		}
+		&.white {
+			&::before {
+				color:rgba(255,255,255,1);
+			}
+		}
+	}
+}
 
 
 
