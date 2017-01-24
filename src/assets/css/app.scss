@@ -459,7 +459,7 @@ section {
 			display:inline-block;
 			fill:#7CB228;
 		}
-		&:hover {
+		&:hover #shape {
 			&::before {
 				fill:#fff;
 			}
@@ -471,6 +471,9 @@ section {
 		}
 	}
 
+#Glassdoor {
+	fill:#000!important;
+}
 
 
 
