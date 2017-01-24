@@ -130,6 +130,21 @@ li {
 	color:$dark-blue;
 }
 
+/*Input Fields*/
+input {
+	width:100%;
+	font-family: "Proxima Nova";
+	font-size: 12px;
+	text-align: center;
+	line-height: 14px;
+	color: #B0B0B0;
+
+
+height: 34px;
+background-color: #FFFFFF;
+border: 1px solid #00A8E1;
+border-radius: 3px;
+}
 
 
 /*Buttons*/
@@ -453,20 +468,33 @@ section {
 	&.glassdoor {
 		&::before{
 			content:'';
-			background:url("/assets/img/glassdoor-icon.svg")no-repeat;
+			-webkit-mask: url("/assets/img/glassdoor-icon.svg")no-repeat 50% 50%;
+			mask: url("/assets/img/glassdoor-icon.svg")no-repeat 50% 50%;
+			-webkit-mask-size: cover;
+			mask-size: cover;
 			width: 13px;
 			height: 23px;
 			display:inline-block;
-			fill:#7CB228;
+			background-color:rgba(124,178,40,1);
+			-webkit-transition: all 0.25s ease-in-out;
+			-moz-transition: all 0.25s ease-in-out;
+			transition: all 0.25s ease-in-out;
 		}
-		&:hover #shape {
+		&:hover {
+			background:rgba(124,178,40,1);
 			&::before {
-				fill:#fff;
+				background-color:rgba(255,255,255,1);
 			}
 		}
 		&.white {
 			&::before {
-				color:rgba(255,255,255,1);
+				background:rgba(255,255,255,1);
+			}
+			&:hover {
+				background:rgba(255,255,255,1);
+				&::before {
+					background-color:rgba(124,178,40,1);
+				}
 			}
 		}
 	}
@@ -474,7 +502,13 @@ section {
 #Glassdoor {
 	fill:#000!important;
 }
-
+// .glassdoor-icon {
+// 	fill:#7CB228;
+// }
+.glassdoor-icon {
+	fill:#ffffff;
+	background-color:red;
+}
 
 
 	&.facebook {
