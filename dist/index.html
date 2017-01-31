@@ -5,8 +5,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - KII Styles</title>
-  <link rel="stylesheet" href="./assets/css/foundation.min.css">
-  <link rel="stylesheet" href="./assets/css/app.css">
+  <link rel="stylesheet" href="/assets/css/foundation.min.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
 
 
@@ -37,7 +37,7 @@
 				<h3>Heading 3</h3>
 				<h4>Heading 4</h4>
 
-				<a href="http://www.goodprofitbook.com/" target="_blank" class="button button-style-1" onclick="ga('send', 'event', 'Good Profit CTA', 'click', 'Philosophy');">Button</a><br>
+				<a href="#" target="_blank" class="button button-style-1" onclick="ga('send', 'event', 'Good Profit CTA', 'click', 'Philosophy');">Button</a><br>
 				<i class="play-button play-button-1" video-id="RkHg5kIc" onclick="ga('send', 'event', 'Campaign Supprt Video - Growing More', 'click', 'Homepage - Control');"></i>
 			</div>
 			<div class="large-6 columns">
@@ -52,15 +52,28 @@
 		</div>
 		<div class="row">
 			<div class="large-12 columns">
+				<label>Form Label Select</label>
+				<select name="select">
+					<option value="value1">Value 1</option> 
+					<option value="value2">Value 2</option>
+					<option value="value3">Value 3</option>
+				</select>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="large-12 columns">
 				<form action="demo_form.asp">
 					<label>Form Label 1</label>
 					<input type="text" name="input-1">
 					<label>Form Label 2</label>
 					<input type="text" name="input-2">
-					<input type="submit" value="Submit">
+					<label>Form Label 3 - Error!</label>
+					<input type="text" name="input-2" class="error">
+					<input type="submit" value="Submit" class="button button-style-1">
 				</form>
 			</div>
 		</div>
+
 	</section>
 	<section class="iconography">
 
@@ -231,11 +244,11 @@
 
 
 
-
 	<script src="./assets/js/vendor/jquery.js"></script>
 	<script src="./assets/js/vendor/what-input.js"></script>
 	<script src="./assets/js/vendor/foundation.js"></script>
 	<script src="./assets/js/app.js"></script>
+	
 </body>
 </html>
 

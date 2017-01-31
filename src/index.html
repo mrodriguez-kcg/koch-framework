@@ -23,7 +23,7 @@
 				<h3>Heading 3</h3>
 				<h4>Heading 4</h4>
 
-				<a href="http://www.goodprofitbook.com/" target="_blank" class="button button-style-1" onclick="ga('send', 'event', 'Good Profit CTA', 'click', 'Philosophy');">Button</a><br>
+				<a href="#" target="_blank" class="button button-style-1" onclick="ga('send', 'event', 'Good Profit CTA', 'click', 'Philosophy');">Button</a><br>
 				<i class="play-button play-button-1" video-id="RkHg5kIc" onclick="ga('send', 'event', 'Campaign Supprt Video - Growing More', 'click', 'Homepage - Control');"></i>
 			</div>
 			<div class="large-6 columns">
@@ -38,15 +38,28 @@
 		</div>
 		<div class="row">
 			<div class="large-12 columns">
+				<label>Form Label Select</label>
+				<select name="select">
+					<option value="value1">Value 1</option> 
+					<option value="value2">Value 2</option>
+					<option value="value3">Value 3</option>
+				</select>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="large-12 columns">
 				<form action="demo_form.asp">
 					<label>Form Label 1</label>
 					<input type="text" name="input-1">
 					<label>Form Label 2</label>
 					<input type="text" name="input-2">
-					<input type="submit" value="Submit">
+					<label>Form Label 3 - Error!</label>
+					<input type="text" name="input-2" class="error">
+					<input type="submit" value="Submit" class="button button-style-1">
 				</form>
 			</div>
 		</div>
+
 	</section>
 	<section class="iconography">
 
@@ -217,11 +230,8 @@
 
 
 
-
-	<script src="./assets/js/vendor/jquery.js"></script>
-	<script src="./assets/js/vendor/what-input.js"></script>
-	<script src="./assets/js/vendor/foundation.js"></script>
-	<script src="./assets/js/app.js"></script>
+	<!--(bake /includes/footer-references.html)-->
+	
 </body>
 </html>
 
