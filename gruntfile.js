@@ -42,11 +42,8 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {src: ['src/assets/js/app.js'], dest: 'dist/assets/js/app.js'},
-          {src: ['src/assets/js/vendor/foundation.js'], dest: 'dist/assets/js/vendor/foundation.js'},
-          {src: ['src/assets/js/vendor/foundation.min.js'], dest: 'dist/assets/js/vendor/foundation.min.js'},
-          {src: ['src/assets/js/vendor/jquery.js'], dest: 'dist/assets/js/vendor/jquery.js'},
-          {src: ['src/assets/js/vendor/what-input.js'], dest: 'dist/assets/js/vendor/what-input.js'},
+          {src: ['src/assets/js/*'], dest: 'dist/assets/js/'},
+          {src: ['src/assets/js/**'], dest: 'dist/assets/js/'}
         ]
       }
     },

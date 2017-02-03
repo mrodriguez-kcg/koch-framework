@@ -33,9 +33,7 @@ section.label {
 
 /*Typography*/
 h1 {
-	margin:0 auto;
-	font-size: 3.75rem;
-	// font-family: "azo-sans-web",sans-serif;
+	font-size:3.938rem;
 	font-family:$sans-serif;
 	font-weight: 800;
 	line-height:3.938rem;
@@ -43,14 +41,14 @@ h1 {
 }
 h2 {
 	display: block;
-	font-size: 2.5rem;
+	font-size:2.688rem;
 	font-family:$sans-serif;
 	font-weight: 400;
 	line-height:2.688rem;
 	color: #00A8E1;
 }
 h3 {
-	font-size:1.750rem;
+	font-size:2.125em;
 	font-family:$sans-serif;
 	font-weight: 400;
 	line-height:2.125em;
@@ -58,7 +56,7 @@ h3 {
 }
 h4 {
 	display: block;
-	font-size:1.125rem;
+	font-size:1.375em;
 	line-height:1.375em;
 	font-family:$sans-serif;
 	font-weight: 700;
@@ -131,6 +129,21 @@ li {
 }
 
 /*Input Fields*/
+select {
+	width:100%;
+	font-family: "Proxima Nova";
+	font-size: 12px;
+	text-align: left;
+	line-height: 14px;
+	color: #B0B0B0;
+	padding: .5rem;
+	margin-bottom:2rem;
+	height: 34px;
+	background-color: #FFFFFF;
+	border: 1px solid #00A8E1;
+	border-radius: 3px;
+}
+
 [type=color],
 [type=date],
 [type=datetime-local],
@@ -152,12 +165,12 @@ textarea {
 	text-align: left;
 	line-height: 14px;
 	color: #B0B0B0;
-padding: .5rem;
-
-height: 34px;
-background-color: #FFFFFF;
-border: 1px solid #00A8E1;
-border-radius: 3px;
+	padding: .5rem;
+	margin-bottom:2rem;
+	height: 34px;
+	background-color: #FFFFFF;
+	border: 1px solid #00A8E1;
+	border-radius: 3px;
 }
 
 [type=color]:focus,
@@ -210,48 +223,7 @@ textarea {
 	transition: box-shadow .5s,border-color .25s ease-in-out;
 	border-color:red;
 }
-// [type=text] {
-//     outline: none;
-//     border: 1px solid #8a8a8a;
-//     background-color: #fefefe;
-//     box-shadow: 0 0 5px #cacaca;
-//     transition: box-shadow .5s,border-color .25s ease-in-out;
 
-
-// [type=color],
-// [type=date],
-// [type=datetime-local],
-// [type=datetime],
-// [type=email],
-// [type=month],
-// [type=number],
-// [type=password],
-// [type=search],
-// [type=tel],
-// [type=text],
-// [type=time],
-// [type=url],
-// [type=week],
-// textarea {
-//     display: block;
-//     box-sizing: border-box;
-//     width: 100%;
-//     height: 2.4375rem;
-//     margin: 0 0 1rem;
-//     padding: .5rem;
-//     border: 1px solid #cacaca;
-//     border-radius: 3px;
-//     background-color: #fefefe;
-//     box-shadow: inset 0 1px 2px hsla(0, 0%, 4%, .1);
-//     font-family: inherit;
-//     font-size: 1rem;
-//     font-weight: 400;
-//     color: #0a0a0a;
-//     transition: box-shadow .5s, border-color .25s ease-in-out;
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none
-// }
 
 
 
