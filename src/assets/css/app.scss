@@ -34,8 +34,12 @@ section.label {
 	z-index:500;
 	height:auto;
 	width:100%;
-	text-align:center;
-	padding:1rem 0;
+	// padding:1rem 0;
+}
+.koch-logo {
+	display:inline-block;
+	width:116px;
+	height:17px;
 }
 .navigation-container ul li {
 	display:inline-block;
