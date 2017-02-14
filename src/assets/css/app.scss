@@ -31,18 +31,26 @@ section.label {
 
 /*Navigation*/
 .navigation-container {
-	background-color:rgba(0,168,225,0.25);
+	// background-color:rgba(0,168,225,0.25);
+	background: linear-gradient(90deg, rgba(0,168,225,0.75) 0%, rgba(0,45,91,0.75) 100%);
 	position:relative;
 	z-index:500;
-	height:auto;
+	// height:auto;
+	height:5.625rem;
 	width:100%;
 	// padding:1rem 0;
+}
+.navigation-container .columns {
+	height:5.625rem;
 }
 .koch-logo {
 	display:inline-block;
 	width:116px;
 	height:17px;
 	background:url("/assets/img/logo-kii-white.svg")no-repeat;
+	text-indent:-9999px;
+	position:absolute;
+	bottom:1.250rem;
 }
 .navigation-container ul li {
 	display:inline-block;
@@ -59,6 +67,9 @@ div.links_container nav li.top_level_nav_item, div.links_container nav li.top_le
 	font-family: "proxima-nova",sans-serif;
 	font-weight: 700;
 	letter-spacing: .25px;
+}
+.menu-container {
+	background: linear-gradient(90deg, rgba(0,168,225,0.7) 0%, #002D5B 100%);
 }
 
 
