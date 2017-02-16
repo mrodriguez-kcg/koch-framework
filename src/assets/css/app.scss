@@ -15,18 +15,227 @@
 }
 
 // *, *:before, *:after {
-// 	-moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
-// 	-webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
-// 	box-shadow: 0 0 5px rgba(0,168,225,.5);
+// 	-moz-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	-webkit-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	box-shadow: 0 0 5px rgba(255,157,24,.5);
 // } 
 
+.v-align-outer {display:table;height:100%;width:100%;}
+.v-align-inner {display:table-cell;vertical-align:middle;}
 
 section.label {
-	background:$white;
+	background:#777;
 	width:100%;
 	border-radius:0px;
 }
 
+/*Navigation*/
+.navigation-container {
+	// background-color:rgba(0,168,225,0.25);
+	background: linear-gradient(90deg, rgba(0,168,225,0.75) 0%, rgba(0,45,91,0.75) 100%);
+	position:relative;
+	z-index:500;
+	// height:auto;
+	height:5.625rem;
+	width:100%;
+	// padding:1rem 0;
+}
+.navigation-container .columns {
+	height:5.625rem;
+}
+.koch-logo {
+	display:inline-block;
+	width:116px;
+	height:17px;
+	// background:url("/assets/img/logo-kii-white.svg")no-repeat;
+	// text-indent:-9999px;
+	margin-top:3.438rem;
+}
+.navigation-container ul li {
+	display:inline-block;
+	list-style-type:none;
+}
+div.links_container nav li.top_level_nav_item, div.links_container nav li.top_level_nav_link {
+	position: relative;
+	display: inline-block;
+	height: 3.25rem;
+	padding: 1rem 0rem;
+	margin: 0 1.25rem 0 0;
+	color:$white;
+	cursor: pointer;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 700;
+	letter-spacing: .25px;
+}
+.menu-container {
+	background: linear-gradient(90deg, rgba(0,168,225,0.7) 0%, #002D5B 100%);
+}
+nav.main-menu ul,
+.external-links-container ul {
+	margin-left:0;
+	margin-bottom:0;
+	line-height:1rem;
+}
+.external-links-container {
+	margin-top:0.938rem;
+}
+.external-links-container ul li {
+	font-family:$sans-serif;
+	font-size:0.875rem;
+	font-weight: bold;
+	text-align: right;
+	line-height:1.063rem;
+	color: #00A8E1;
+	vertical-align:middle;
+}
+.external-links-container ul li:nth-child(2) {
+	margin-left:2.5rem;
+	margin-right:1.875rem;
+	position:relative;
+}
+.external-links-container ul li:nth-child(2)::before {
+	content:'|';
+	display:block;
+	position:absolute;
+	left:-1.438rem;
+}
+
+nav.main-menu {
+	margin-top:.45rem;
+	> ul > li {
+		margin-left:1rem;
+		padding-left:0.750rem;
+		padding-right:0.750rem;
+		&::after {
+			content:'';
+			background:transparent;
+			position:absolute;
+			bottom:0px;
+			left:0px;
+			width:100%;
+			height:5px;
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+		&:hover {
+			&::after {
+				background:$blue;
+			}
+		}
+		&:first-child {
+			margin-left:0;
+		}
+		&:hover ul {
+			//display:block;
+			visibility: visible;
+			opacity: 1;
+		}
+		&> ul {
+			//display:none;
+			position: absolute; 
+			top:40px;
+			width:235px;
+			left:0px;
+			visibility: hidden;
+			opacity: 0;
+			-webkit-transition:visibility 0s, opacity 0.2s linear;
+			-moz-transition:visibility 0s, opacity 0.2s linear;
+  			transition:visibility 0s, opacity 0.2s linear;
+			&> li {
+				float:none;
+				display:list-item;
+				position: relative;
+				text-align:left;
+				margin-left:0;
+				a {
+					line-height:2.5rem;
+					background:rgba(255,255,255,.9);
+					display:inline-block;
+					text-align:left;
+					width:100%;
+					border-bottom:1px #fff solid;
+					padding-left:0.750rem;
+					font-size:0.875rem;
+					font-weight:500;
+					color:$dark-gray;
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+					&:hover {
+						background:rgba(229,249,255,.9);
+					}
+				}
+			}
+		}
+	}
+	ul > li, ul > li a {
+		font-family:$sans-serif;
+		font-size:0.875rem;
+		font-weight: bold;
+		text-align: right;
+		line-height:2.5rem;
+		color: $white;
+		position:relative;
+	}
+	i {
+		font-size:.5rem;
+		position:relative;
+		top:-1px;
+	}
+}
+
+
+.navigation-container::after {
+	clear:both;
+}
+.navigation-column {
+	width:50%;
+	float:left;
+	height:5.625rem;
+	position:relative;
+}
+.navigation-container .navigation-column:last-child {
+	background: linear-gradient(90deg, rgba(0,168,225,0.7) 0%, rgba(0,45,91,1) 100%);
+}
+.navigation-column:last-child::before {
+	position: absolute;
+	left: -2rem;
+	top: 0;
+	bottom: 0;
+	content: '';
+	opacity: .7;
+	border-bottom: 5.5rem solid #00a8e1;
+	border-left: 2rem solid transparent;
+}
+
+.navigation-column .row {
+	max-width:37.5rem;
+}
+.navigation-column:first-child .row {
+	margin-right:0;
+}
+.navigation-column:last-child .row {
+	margin-left:0;
+}
+.navigation-column:last-child .row {
+	text-align:right;
+}
+.external-links-container {
+	position:relative;
+}
+.external-links-container::after {
+	content:'';
+	width:95%;
+	height:1px;
+	position:absolute;
+	background:$blue;
+	right:0px;
+	bottom:-5px;
+}
+.logo-k, .logo-o, .logo-c, .logo-h, .logo-tm {
+	display:block;
+}
 
 
 
@@ -48,16 +257,16 @@ h2 {
 	color: #00A8E1;
 }
 h3 {
-	font-size:2.125em;
+	font-size:2.125rem;
 	font-family:$sans-serif;
 	font-weight: 400;
-	line-height:2.125em;
+	line-height:2.125rem;
 	color: #00A8E1;
 }
 h4 {
 	display: block;
-	font-size:1.375em;
-	line-height:1.375em;
+	font-size:1.375rem;
+	line-height:1.375rem;
 	font-family:$sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -131,7 +340,7 @@ li {
 /*Input Fields*/
 select {
 	width:100%;
-	font-family: "Proxima Nova";
+	font-family:$sans-serif;
 	font-size: 12px;
 	text-align: left;
 	line-height: 14px;
@@ -160,7 +369,7 @@ select {
 [type=week],
 textarea {
 	width:100%;
-	font-family: "Proxima Nova";
+	font-family:$sans-serif;
 	font-size: 12px;
 	text-align: left;
 	line-height: 14px;
@@ -384,6 +593,11 @@ section {
 	-moz-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	border-radius:50%;
+	&.small {
+		font-size:0.938rem;
+		width:1.50rem;
+		height:1.50rem;
+	}
     &::before {
     	position: absolute;
     	top: 50%;
@@ -565,6 +779,12 @@ section {
 			-webkit-transition: all 0.25s ease-in-out;
 			-moz-transition: all 0.25s ease-in-out;
 			transition: all 0.25s ease-in-out;
+		}
+		&.small {
+			&::before{
+				width:9.60px;
+				height:17px;
+			}
 		}
 		&:hover {
 			background:rgba(124,178,40,1);
