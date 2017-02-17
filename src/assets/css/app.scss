@@ -30,6 +30,17 @@ section.label {
 }
 
 /*Navigation*/
+header {
+	    height: auto;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 9999;
+}
+.nav-up {
+    top: -136px;
+}
 .navigation-container {
 	// background-color:rgba(0,168,225,0.25);
 	background: linear-gradient(90deg, rgba(0,168,225,0.75) 0%, rgba(0,45,91,0.75) 100%);
@@ -233,10 +244,34 @@ nav.main-menu {
 	right:0px;
 	bottom:-5px;
 }
+.logo-path {fill:#fff;}
 .logo-k, .logo-o, .logo-c, .logo-h, .logo-tm {
-	display:block;
+	visibility:visible;
+	opacity:1;
+	-webkit-transition:visibility 0s, opacity 0.2s linear;
+	-moz-transition:visibility 0s, opacity 0.2s linear;
+	transition:visibility 0s, opacity 0.2s linear;
 }
-
+.nav-up .logo-k,
+.nav-up .logo-o,
+.nav-up .logo-c,
+.nav-up .logo-h,
+.nav-up .logo-tm,
+.nav-down .logo-k,
+.nav-down .logo-o,
+.nav-down .logo-c,
+.nav-down .logo-h,
+.nav-down .logo-tm, {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition:visibility 0s, opacity 0.2s linear;
+	-moz-transition:visibility 0s, opacity 0.2s linear;
+	transition:visibility 0s, opacity 0.2s linear;
+}
+.nav-down .koch-logo,
+.nav-up .koch-logo {
+	width:200px;
+}
 
 
 
