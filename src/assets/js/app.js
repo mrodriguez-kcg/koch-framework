@@ -19,12 +19,14 @@ function hasScrolled() {
     if (Math.abs(ScrollTop - st) <= delta)//if 0 - curent location is less than or =to 5 return
         return;
     if (st > ScrollTop && st > navHeight) {//if current scroll is larger than 0 and it is greater than nav height remove the class nav down and add nav up
-        $('header').removeClass('nav-down').addClass('nav-up')
+        //$('header').removeClass('nav-down').addClass('nav-up')
     } else if (st + $(window).height() < $(document).height()) {
-    	$('header').removeClass('nav-up').addClass('nav-down')
+    	//$('header').removeClass('nav-up').addClass('nav-down');
+    	//$('.logo-path').removeClass('nav-down');
     	if (st == 0) {
-    		$('header').removeClass('nav-down')
-    		console.log('remove nav down')
+    		//$('header').removeClass('nav-down');
+    		//console.log('remove nav down');
+    		$('.logo-path').addClass('on');
     	}
     } 
     	

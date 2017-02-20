@@ -27,6 +27,7 @@ section.label {
 	background:#777;
 	width:100%;
 	border-radius:0px;
+	padding:5rem 0;
 }
 
 /*Navigation*/
@@ -244,34 +245,54 @@ nav.main-menu {
 	right:0px;
 	bottom:-5px;
 }
-.logo-path {fill:#fff;}
-.logo-k, .logo-o, .logo-c, .logo-h, .logo-tm {
-	visibility:visible;
+.logo-path {
+	fill:#fff;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.logo-k.on, .logo-o.on, .logo-c.on, .logo-h.on, .logo-tm.on {
 	opacity:1;
-	-webkit-transition:visibility 0s, opacity 0.2s linear;
-	-moz-transition:visibility 0s, opacity 0.2s linear;
-	transition:visibility 0s, opacity 0.2s linear;
 }
-.nav-up .logo-k,
-.nav-up .logo-o,
-.nav-up .logo-c,
-.nav-up .logo-h,
-.nav-up .logo-tm,
-.nav-down .logo-k,
-.nav-down .logo-o,
-.nav-down .logo-c,
-.nav-down .logo-h,
-.nav-down .logo-tm, {
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition:visibility 0s, opacity 0.2s linear;
-	-moz-transition:visibility 0s, opacity 0.2s linear;
-	transition:visibility 0s, opacity 0.2s linear;
+
+.on.logo-k,
+.on.logo-o,
+.on.logo-c,
+.on.logo-h,
+.on.logo-tm {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	// visibility: hidden;
+	// opacity: 0;
+	// -webkit-transition:visibility 0s, opacity 0.2s linear;
+	// -moz-transition:visibility 0s, opacity 0.2s linear;
+	// transition:visibility 0s, opacity 0.2s linear;
 }
-.nav-down .koch-logo,
-.nav-up .koch-logo {
-	width:200px;
+.off.logo-k,
+.off.logo-o,
+.off.logo-c,
+.off.logo-h,
+.off.logo-tm {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+	-webkit-animation-duration: .2s;
+	animation-duration: .2s;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
 }
+// .nav-down .koch-logo,
+// .nav-up .koch-logo {
+// 	width:200px;
+// }
 
 
 
@@ -878,10 +899,8 @@ section {
 
 
 
-
-
-
-
+/* Import Animations*/
+@import "animations.scss";
 
 
 
