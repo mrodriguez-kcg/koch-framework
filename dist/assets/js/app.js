@@ -25,6 +25,7 @@ function hasScrolled() {
     	//$('header').removeClass('nav-up').addClass('nav-down');
     	//$('.logo-path').removeClass('nav-down');
     	//$('.logo-path.on').removeClass('on');
+    	
     	if (st == 0) {
     		//$('header').removeClass('nav-down');
     		//console.log('remove nav down');
