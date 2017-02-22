@@ -271,19 +271,26 @@ nav.main-menu {
 	animation-duration: .5s;
 	-webkit-animation-delay: 1s;
 	animation-delay: 1s;
-	// visibility: hidden;
-	// opacity: 0;
-	// -webkit-transition:visibility 0s, opacity 0.2s linear;
-	// -moz-transition:visibility 0s, opacity 0.2s linear;
-	// transition:visibility 0s, opacity 0.2s linear;
+}
+.on-quick.logo-k,
+.on-quick.logo-o,
+.on-quick.logo-c,
+.on-quick.logo-h,
+.on-quick.logo-tm {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	-webkit-animation-duration: .2s;
+	animation-duration: .2s;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
 }
 .off.logo-k,
 .off.logo-o,
 .off.logo-c,
 .off.logo-h,
 .off.logo-tm {
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
+	-webkit-animation-name: fadeOutLeft;
+	animation-name: fadeOutLeft;
 	-webkit-animation-duration: .2s;
 	animation-duration: .2s;
 	-webkit-animation-delay: .2s;
