@@ -1,5 +1,5 @@
 /*--Variables and Mixins--*/
-  @import "variables_and_mixins.scss";
+@import "variables_and_mixins.scss";
 /*--End Variables and Mixins--*/
 
 /*Using Foundation as core framework*/
@@ -29,8 +29,6 @@ section.label {
 	border-radius:0px;
 	padding:5rem 0;
 }
-
-
 
 @import "size-standard.scss";
 @import "size-small.scss";
