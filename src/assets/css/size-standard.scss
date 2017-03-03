@@ -881,3 +881,30 @@ section {
 		}
 	}
 }
+
+
+
+//
+// Home Page Modules
+.horizontal-50-50 {
+	position:relative;
+	overflow:auto;
+	height:400px;	
+	margin-bottom:-3rem;
+	.video-module {
+	}
+	.text-module {
+	}
+	&:last-of-type {
+		margin-bottom:0rem;
+	}
+}
+
+
+
+
+
+
+
+// END Home Page Modules
+//
