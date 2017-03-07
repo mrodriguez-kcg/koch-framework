@@ -8,6 +8,7 @@
 		flex-flow:row wrap;
 		height:auto;
 		margin-bottom:0;
+		overflow:initial;
 		& .module {
 			order:1;
 			padding-top:2rem;
@@ -36,6 +37,21 @@
 		}
 		& .flex-bottom {
 			order:1;
+		}
+		.flex-top.text-module::after {
+			content: '';
+			position: absolute;
+			z-index: 100;
+			top: -20px;
+			right: auto;
+			bottom: auto;
+			left: 10%;
+			width: 0;
+			height: 0;
+			border-top: none;
+			border-right: 20px solid transparent;
+			border-bottom: 20px solid #fff;
+			border-left: 20px solid transparent;
 		}
 	}
 }
