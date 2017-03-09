@@ -20,20 +20,22 @@ function hasScrolled() {
         return;
     if (st > ScrollTop && st > navHeight) {//if current scroll is larger than 0 and it is greater than nav height remove the class nav down and add nav up
         $('header').removeClass('nav-down').addClass('nav-up');
-        $('.logo-path').removeClass('on').removeClass('on-quick').addClass('off');
+        // Turn this back on for svg animation ->
+        //$('.logo-path').removeClass('on').removeClass('on-quick').addClass('off');
     } else if (st + $(window).height() < $(document).height()) {
-    	$('header').removeClass('nav-up').addClass('nav-down');
-    	//$('.logo-path').removeClass('nav-down');
-    	//$('.logo-path.on').removeClass('on');
-    	
-    	if (st == 0) {
-    		$('header').removeClass('nav-down');
-    		//console.log('remove nav down');
-    		//$('.logo-path.on').addClass('on');
-            $('.logo-path').removeClass('off').addClass('on-quick');
-    	}
+        $('header').removeClass('nav-up').addClass('nav-down');
+        //$('.logo-path').removeClass('nav-down');
+        //$('.logo-path.on').removeClass('on');
+        
+        if (st == 0) {
+            $('header').removeClass('nav-down');
+            //console.log('remove nav down');
+            //$('.logo-path.on').addClass('on');
+           // Turn this back on for svg animation ->
+           // $('.logo-path').removeClass('off').addClass('on-quick');
+        }
     } 
-    	
+        
     ScrollTop = st;
     console.log(st)
 }
