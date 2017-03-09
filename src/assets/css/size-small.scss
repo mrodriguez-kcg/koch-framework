@@ -1,5 +1,30 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+	.navigation-container {
+		height:3.75rem;
+		.navigation-column {
+			&:last-child {
+				display:none;
+			}
+			.columns {
+				height:3.75rem;
+			}
+		}
+	}
+	.koch-logo {
+		margin-top:1rem;
+	}
+	// Testing singular SVG animation, may leave off of final build.
+	// .mark {
+	// 	&.on {
+	// 		transform:matrix(1, 0, 0, 1, 0, 0);
+	// 	}
+	// 	&.off {
+	// 		transform:matrix(1.5, 0, 0, 1.5, 0, -7);
+	// 	}
+	// }
+
+
 	// .label {
 	// 	display:none;
 	// }
@@ -55,3 +80,7 @@
 		}
 	}
 }
+
+
+
+
