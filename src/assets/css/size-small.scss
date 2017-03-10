@@ -17,6 +17,26 @@
 					width:85%;
 					height:100%;
 					background:rgba(0,45,91,.9);
+					&.open {
+						display:block;
+						-webkit-animation-name: fadeInRight;
+						animation-name: fadeInRight;
+						-webkit-animation-duration: .25s;
+						animation-duration: .25s;
+						-webkit-animation-fill-mode: both;
+						animation-fill-mode: both;
+					}
+						
+					&.close {
+						opacity:0;
+						-webkit-animation-name: fadeOutRight;
+						animation-name: fadeOutRight;
+						-webkit-animation-duration: .25s;
+						animation-duration: .25s;
+						-webkit-animation-fill-mode: both;
+						animation-fill-mode: both;						
+					}
+
 					.columns {
 						display:flex;
 						flex-flow:row wrap;
@@ -132,7 +152,7 @@
 	//Mobile Nav
 	.burger {
 		position: fixed;
-		top:10px;
+		top:8px;
 		right:20px;
 		display: block;
 		width:40px;
@@ -181,8 +201,8 @@
 		height: 100%;
 		background: #fff;
 		content: '';
-		-webkit-transition: -webkit-transform 0.3s;
-		transition: transform 0.3s;
+		-webkit-transition: -webkit-transform 0.25s;
+		transition: transform 0.25s;
 	}
 
 	.burger span:after {
