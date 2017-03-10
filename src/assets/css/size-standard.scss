@@ -1,3 +1,6 @@
+.v-align-outer {display:table;height:100%;width:100%;}
+.v-align-inner {display:table-cell;vertical-align:middle;}
+
 /*Typography*/
 .h1-style {
 	font-size:3.938rem;
@@ -313,6 +316,7 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 9999;
+    background: linear-gradient(90deg, rgba(0,168,225,0.75) 0%, rgba(0,45,91,0.75) 100%);
 }
 main {
 	display:block;
@@ -329,7 +333,7 @@ main::before {
 }
 .navigation-container {
 	// background-color:rgba(0,168,225,0.25);
-	background: linear-gradient(90deg, rgba(0,168,225,0.75) 0%, rgba(0,45,91,0.75) 100%);
+	
 	position:relative;
 	z-index:500;
 	// height:auto;
