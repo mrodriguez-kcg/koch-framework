@@ -10,4 +10,25 @@
 		padding-right: 0.3750rem;
 	}
 
+	.horizontal-50-50 {
+		display:flex;
+		flex-flow:row wrap;
+		height:auto;
+		margin-bottom:0;
+		overflow:initial;
+		.module {
+			order:1;
+			padding-top:2rem;
+			padding-bottom:2rem;
+		}
+		.text-module {
+			order:2;
+			padding-right:.375rem;
+			padding-left:.375rem;
+			&.arrow-right::after, .arrow-left::after {
+				display:none;
+			}
+		}
+	}
+
 }
