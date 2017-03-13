@@ -53,4 +53,5 @@ function hasScrolled() {
 $( ".burger" ).click(function() {
   $( this ).toggleClass("open").toggleClass("close");
   $(".navigation-column:last-child .row").toggleClass("open");
+  $('header').toggleClass("lock");
 });
