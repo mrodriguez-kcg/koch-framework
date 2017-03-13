@@ -489,13 +489,12 @@ nav.main-menu {
 					}
 				}
 			}
-			&:hover ul {
-				//display:block;
-				visibility: visible;
-				opacity: 1;
-			}
 		}
-
+		&:hover ul {
+			//display:block;
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 	ul > li, ul > li a {
 		font-family:$sans-serif;
