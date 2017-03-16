@@ -36,7 +36,8 @@ module.exports = function(grunt) {
               "dist/modules-full-width.html": "src/modules-full-width.html",
               "dist/modules-headers.html": "src/modules-headers.html",
               "dist/modules-home.html": "src/modules-home.html",
-              "dist/modules-partial-width.html": "src/modules-partial-width.html"
+              "dist/modules-partial-width.html": "src/modules-partial-width.html",
+              "dist/build/home.html": "src/build/home.html"
             }
         }
     },

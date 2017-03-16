@@ -40,15 +40,6 @@ function hasScrolled() {
     console.log(st)
 }
 
-// $('#toggle').click(function() {
-//     $(this).toggleClass('active');
-//     $('#overlay').toggleClass('open' , 'kill');
-//     $('.news-post-alt-nav-container').toggleClass('open');
-//     $('header').toggleClass('fixed-nav');
-//     $('.animsition-body').toggleClass('off');
-//     $('.page-template-template_blastoff .top-logo').toggleClass('top-logo-color');
-//     $('.top-logo').toggleClass('logo-active');
-// });
 
 $( ".burger" ).click(function() {
   $( this ).toggleClass("open").toggleClass("close");
