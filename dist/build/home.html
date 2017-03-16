@@ -42,6 +42,7 @@
 		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 		  })(document);
 		</script>
+		<link rel="stylesheet" href="http://www.kochind.com/assets/css/old.css">
 		<script type="application/ld+json">
 			{ "@context" : "http://schema.org",
 			"@type" : "Organization",
@@ -107,13 +108,13 @@
 		<![endif]--> 
 		<meta property="og:title" content="Koch Industries">
 		<meta property="og:description" content="Food. Shelter. Clothing. Transportation. Creating life’s basic necessities for people around the world through various businesses in multiple industries.">
-		<meta property="og:image" content='http://www.kochind.com/assets/images/homepage_bg_image_480.jpg' />
+		<meta property="og:image" content='http://www.kochind.comhttp://www.kochind.com/assets/images/homepage_bg_image_480.jpg' />
 		<link rel="canonical" href="http://www.kochind.com" />
 		<!--CRITICAL CSSSSSSSS-->
 		<!--Inline CSS included here to get the homepage image to user as fast as possible for low connection areas-->
 		<style>
 		.homepage_slider_container {
-			background: url( /assets/images/homepage_bg_1600.jpg ) center top no-repeat;
+			background: url( http://www.kochind.com/assets/images/homepage_bg_1600.jpg ) center top no-repeat;
 			background-size: 100%;
 		}
 		.html5-video-player {
@@ -137,8 +138,8 @@
 			height: 160%;
 			pointer-events: none;
 			margin: 0 auto;
-			/*background: url( /assets/images/homepage_bg_1600.jpg ) center no-repeat;*/
-			background: url( /assets/images/homepage_bg_image_1600.jpg ) center no-repeat;
+			/*background: url( http://www.kochind.com/assets/images/homepage_bg_1600.jpg ) center no-repeat;*/
+			background: url( http://www.kochind.com/assets/images/homepage_bg_image_1600.jpg ) center no-repeat;
 			background-size: 100%;
 			background-size: cover;
 			-webkit-transform: translateY(-50%);
@@ -169,6 +170,15 @@
 	</head>
 
 	<body>
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NDC8QG"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NDC8QG');</script>
+	<!-- End Google Tag Manager -->
 	<header>
 		<div class="navigation-container">
 			<div class="navigation-column">
@@ -367,17 +377,59 @@
 		</div>
 	</header>
 
-	<main>
-		<section class="label" style="padding-top:10rem;">
-			<div class="row">
-				<div class="large-12 columns">
-					<h1 class="temp-margin dark-gray">Home Page Modules</h1>
-				</div>
-			</div>
-		</section>
+	<main class="homepage_template" role="main">
+		
 
-		<section>
+
+
+		<section class="homepage_slider_container slick-initialized slick-slider">
+			<div class="slide bg_video_slide video-background"> 
+				<div class="video_cover"></div>
+				<div class="slide_cover"></div>
+				<div class="video-foreground">
+					<!-- <embed src="http://www.youtube.com/v/sgnPmZeYA-g?loop=1&hl=en_US&rel=0&autohide=1&autoplay=1&playlist=sgnPmZeYA-g" wmode="transparent" type="application/x-shockwave-flash" width="100%" height="100%" allowfullscreen="true" title="Adobe Flash Player"> -->
+				</div>
+				<div class="slide_content_display_type version-a">
+					<h1 class="home">
+						<span class="line-one"><strong>Makers</strong> <span class="nobr">of goods.</span></span>
+						<span class="line-two"><strong>Advocates</strong> <span class="nobr">of better.</span></span>
+					</h1>
+					<div class="btn-container">
+						<p>We make everyday goods essential to life. Yet what makes us different is our passion for removing barriers <span class="nobr">to opportunity.</span></p>
+						<a href="/whatwedo/" class="button button_style_1" onclick="ga('send', 'event', 'Featured - Goods', 'click', 'Banner');">See the goods we make</a>
+						<a href="/takingastand/" class="button button_style_1" onclick="ga('send', 'event', 'Featured - Better', 'click', 'Banner');">Explore the better we do</a>
+					</div>
+				</div><!--slide_content_display_type-->
+			</div> <!--slide-->
+		</section> <!--homepage_slider_container-->
+
+
+
+		<section id="campaign" class="homepage_campaign_section">
+			<div class="home_campaign_support">
+				<div class="homepage_campaign_support_bg"></div> <!--homepage_campaign_support_bg-->
+
+
 			
+			<div class="row horizontal-50-50">
+
+				<div class="large-6 columns text-module arrow-right text-right">
+					<div class="v-align-outer">
+						<div class="v-align-inner">
+							<h2 class="h4-style dark-blue">Criminal Justice Reform</h2>
+							<p>Throughout his life, Koch’s lead attorney, Mark Holden, has seen the devastating results of overcriminalization on the lives of others. Now he’s helping lead a broad coalition from across the political spectrum to do something about it. <a href="http://kochstories.com/articles/and-justice-for-all" target="_blank" class="text_link_U blue" onclick="ga('send', 'event', 'Criminal Justice Reform - text link', 'click', 'Homepage - Control');">Read full story.</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="large-6 columns module">
+					<div class="v-align-outer">
+						<div class="v-align-inner">
+							<a class="play-button play-button-1"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
 			<div class="row horizontal-50-50">
 
 				<div class="large-6 columns module">
@@ -390,8 +442,8 @@
 				<div class="large-6 columns text-module arrow-left">
 					<div class="v-align-outer">
 						<div class="v-align-inner">
-							<h2 class="h4-style">Heading 1</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum ex quis placerat viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec molestie est.</p>
+							<h3 class="h4-style">Quenching A Thirsty Planet</h3>
+							<p>Two-thirds of our globe is covered with water. Yet people in communities all over the world still profoundly suffer from lack of clean drinking water. Meet Manny Singh, one of our scientists who innovates new and better ways to solve this crisis. <a class="text_link_U blue" href="http://kochstories.com/articles/ripple-effect" target="_blank" onclick="ga('send', 'event', 'Quenching Thirst - text link', 'click', 'Homepage - Control');">Read full story.</a></p>
 						</div>
 					</div>
 				</div>
@@ -399,11 +451,11 @@
 			</div>
 			<div class="row horizontal-50-50">
 
-				<div class="large-6 columns text-module arrow-right">
+				<div class="large-6 columns text-module arrow-right text-right">
 					<div class="v-align-outer">
 						<div class="v-align-inner">
-							<h1 class="h4-style">Heading 2</h1>
-							<p>Morbi sollicitudin quis risus vitae pellentesque. Nam non dapibus lorem. Integer id commodo quam. Aliquam ullamcorper erat odio, et elementum sem convallis nec. </p>
+							<h2 class="h4-style dark-blue">Growing More, Naturally</h2>
+							<p>At Koch Agronomic Services, scientists like John Kruse research promising new ways to stimulate plant performance and crop yield using microbes found naturally in the soil itself. <a class="text_link_U blue" href="http://kochstories.com/articles/growing-a-stronger-planet" target="_blank" onclick="ga('send', 'event', 'Growing More - text link', 'click', 'Homepage - Control');">Read full story.</a>
 						</div>
 					</div>
 				</div>
@@ -416,238 +468,29 @@
 				</div>
 
 			</div>
-			<div class="row horizontal-50-50">
 
-				<div class="large-6 columns module">
-					<div class="v-align-outer">
-						<div class="v-align-inner">
-							<a class="play-button play-button-1"></a>
-						</div>
-					</div>
-				</div>
-				<div class="large-6 columns text-module arrow-left">
-					<div class="v-align-outer">
-						<div class="v-align-inner">
-							<h3 class="h4-style">Heading 3</h3>
-							<p>Integer nec mi iaculis odio faucibus molestie id id dolor. Integer maximus, sem eget aliquam hendrerit, dolor velit eleifend magna, eu ultricies metus quam vitae sapien.</p>
-						</div>
-					</div>
-				</div>
 
 			</div>
 
 		</section>
 
-		<section style="margin-top:25rem;">
-			
-			<div class="row expanded">
-				
-				<div class="large-6 medium-6 columns vertical-50-50">
-					<div class="flex-top text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<div class="large-6 large-offset-4 end columns">
-									<h4 class="h4-style">Headline 1</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum ex quis placerat viverra.</p>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="flex-bottom">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="play-button play-button-1"></a>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="large-6 medium-6 columns vertical-50-50">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 2</a>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<h4 class="h4-style">Headline 2</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum ex quis placerat viverra.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
 
-			</div>
-
+		<section class="cta cta-with-background cta-large" style="background-image:url('/assets/img/example-cta.jpg');">
 			<div class="row">
-				
-				<div class="large-6 medium-6 columns vertical-50-50">
-					<div class="flex-top text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<h4 class="h4-style">Headline 3</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum ex quis placerat viverra.</p>
-							</div>
-						</div>	
-					</div>
-					<div class="flex-bottom">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 3</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="large-6 medium-6 columns vertical-50-50">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 4</a>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<blockquote>&ldquo;For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.&rdquo;</blockquote>
-							</div>
-						</div>	
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
-
-
-
-		<section>
-
-
-			<div class="row collapse expanded" style="margin-top:25rem;">
-				
-				<div class="large-4 columns horizontal-33">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<h4 class="h4-style">Headline Here</h4>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<p>For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="large-4 columns horizontal-33">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 4</a>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<p>For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="large-4 columns horizontal-33">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 4</a>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<p>For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-
-			</div>
-
-
-			<div class="row collapse" style="margin-top:5rem;">
-				
-				<div class="large-4 columns horizontal-33">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<h4 class="h4-style">Headline Here</h4>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<p>For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="large-4 columns horizontal-33">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 4</a>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<p>For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="large-4 columns horizontal-33">
-					<div class="flex-top">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<a class="button button-style-1">Click Me 4</a>
-							</div>
-						</div>
-					</div>
-					<div class="flex-bottom text-module">
-						<div class="v-align-outer">
-							<div class="v-align-inner">
-								<p>For years, I’ve relied on Molex products to help me achieve my personal passion of building robots. Now, I’m helping to ensure Molex is a name our customers trust and rely on to meet their needs.</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-
-
-
-
-		<section class="label">
-			<div class="row">
-				<div class="large-12 columns">
-					<h1 class="temp-margin dark-gray">End Home Page Modules</h1>
+				<div class="large-6 large-offset-3 columns">
+					<h2 class="text-center h2-style white">CTA Large</h2>
+					<p class="text-center white">Mauris enim massa, laoreet sit amet gravida at, finibus et neque. Sed nulla nibh, lacinia et volutpat ut, bibendum et massa. Praesent <a href="#">Link</a> sollicitudin faucibus ex quis vestibulum. Vestibulum porta massa vitae mi faucibus ultricies.</p>
 				</div>
 			</div>
 		</section>
+
+
+
+
+
+
+
 
 
 
@@ -668,10 +511,103 @@
 
 	</main>
 
+	<footer role="contentinfo">
+	    <div class="column row footer-info-container">
+	        <div class="large-12 columns">
+	            <div class="logo_container">
+	                <a href="/">
+	                    <img src="/assets/images/logo_kii_color.svg" alt="Koch Industries logo" />
+	                </a>
+	            </div>
+	        </div>
+
+	    </div>
+	    <div class="column row footer-info-container">
+	        <div class="large-4 medium-5 small-12 columns">
+
+	            <p>Food. Shelter. Clothing. Transportation. Koch Industries creates life’s basic necessities, while innovating ways to make them even better. Yet our advocacy for a free and open society is what truly sets us apart.</p>
+	            <p>Follow Koch Industries</p>
+	            <ul class="follow">
+	                <li><a target="_blank" href="http://www.facebook.com/KochIndustries" onclick="ga('send', 'event', 'Footer - Facebook Link', 'click', 'Footer');"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	                <li><a target="_blank" href="https://www.linkedin.com/company/koch-industries" onclick="ga('send', 'event', 'Footer - LinkedIn Link', 'click', 'Footer');"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	                <li><a target="_blank" href="http://www.twitter.com/Koch_Industries" onclick="ga('send', 'event', 'Footer - Twitter Link', 'click', 'Footer');"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	                <li><a target="_blank" href="https://www.instagram.com/kochindustriesinc/" onclick="ga('send', 'event', 'Footer - Instagram Link', 'click', 'Footer');"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+	                <li><a target="_blank" href="https://www.youtube.com/user/KochCompanies" onclick="ga('send', 'event', 'Footer - YouTube Link', 'click', 'Footer');"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+	                <li><a target="_blank" href="https://www.glassdoor.com/Overview/Working-at-Koch-Industries-EI_IE2864.11,26.htm" class="glassdoor_icon" onclick="ga('send', 'event', 'Footer - Glassdoor Link', 'click', 'Footer');"></a></li>
+	            </ul>
+	        </div>
+	        <div class="large-3 medium-4 small-12 medium-offset-1 columns end footer-nav">
+	            <ul>
+	                <li><a href="/whatwedo/" onclick="ga('send', 'event', 'Footer - What We Do', 'click', 'Footer');">What We Do</a></li>
+	                <li><a href="/philosophy/" onclick="ga('send', 'event', 'Footer - Philosophy', 'click', 'Footer');">Philosophy</a></li>
+	                <li><a href="/locations/" onclick="ga('send', 'event', 'Footer - Locations', 'click', 'Footer');">Locations</a></li>
+	                <li><a href="/companies/" onclick="ga('send', 'event', 'Footer - Companies', 'click', 'Footer');">Companies</a></li>
+	                <li><a href="/responsibility/" onclick="ga('send', 'event', 'Footer - Responsibility', 'click', 'Footer');">Responsibility</a></li>
+	            </ul>
+
+	            <ul>   
+	                <li><a href="/takingastand/" onclick="ga('send', 'event', 'Footer - Taking Stand', 'click', 'Footer');">Taking A Stand</a></li>             
+	                <li><a href="/giving/" onclick="ga('send', 'event', 'Footer - Giving', 'click', 'Footer');">Giving</a></li>
+	                <li><a href="/careers/" onclick="ga('send', 'event', 'Footer - Careers', 'click', 'Footer');">Careers</a></li>
+	                <li><a target="_blank" href="http://www.kochnews.com/" onclick="ga('send', 'event', 'Footer - Koch News', 'click', 'Footer');">News</a></li>
+	                <li><a target="_blank" href="http://kochstories.com/" onclick="ga('send', 'event', 'Footer - Koch Stories', 'click', 'Footer');">Stories</a></li>
+	            </ul>
+	        </div>
+	    </div>
+
+	    <div class="row column">
+	        <div class="medium-6 columns">
+	            <ul class="site_footer_links">
+	                <li>
+	                    <a href="/contact/" onclick="ga('send', 'event', 'Footer - Contact Us', 'click', 'Footer');">Contact Us</a>
+	                </li>
+	                <li>
+	                    <a href="/termsofuse/" onclick="ga('send', 'event', 'Footer - Terms of Use', 'click', 'Footer');">Terms of Use</a>
+	                </li>
+	                <li>
+	                    <a href="/privacypolicy/" onclick="ga('send', 'event', 'Footer - Privacy Policy', 'click', 'Footer');">Privacy Policy</a>
+	                </li>
+	                <li>
+	                    <a href="http://www.kochcoc.com/" target="_blank" onclick="ga('send', 'event', 'Footer - Code of Conduct', 'click', 'Footer');">Code of Conduct</a>
+	                </li>
+	                <li> 
+	                    <a href="/californiasupply/" onclick="ga('send', 'event', 'Footer - California Supply', 'click', 'Footer');">California Supply</a>
+	                </li>
+	                <li>
+	                    <a href="/vendors/" onclick="ga('send', 'event', 'Footer - Vendors', 'click', 'Footer');">Vendors</a>
+	                </li>
+	            </ul>
+	        </div>
+	        <div class="medium-6 columns">
+	            <p class="copyright dark_blue"> Koch Industries, Inc. All rights reserved.</p>
+	        </div>
+
+
+	    </div>
+
+	</footer>
+
+
+
 	<script src="/assets/js/vendor/jquery.js"></script>
 	<script src="/assets/js/vendor/what-input.js"></script>
 	<script src="/assets/js/vendor/foundation.js"></script>
 	<script src="/assets/js/app.js"></script>
+	<link rel="stylesheet" href="/assets/css/foundation.min.css">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+
+
+	<script>
+	  (function(d) {
+	    var config = {
+	      kitId: 'utr7gbs',
+	      scriptTimeout: 3000,
+	      async: true
+	    },
+	    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
 	
 </body>
 </html>
