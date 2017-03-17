@@ -186,9 +186,14 @@ footer .logo_container img {
     line-height: 1.25rem;
     text-align: left
 }
+.footer-info-container .icon {
+	font-size:1.25rem;
+	font-weight:normal;
+}
 
 .footer-info-container a {
-    font-weight: bold
+    font-weight: bold;
+    text-decoration:none;
 }
 
 .footer-info-container ul li {

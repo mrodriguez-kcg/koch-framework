@@ -66,8 +66,8 @@ p.white a {
 	color:$white;
 	text-decoration:underline;
 }
-ul {
-
+ul, ol {
+	margin-left:0;
 }
 li {
 	font-size:.875rem;
