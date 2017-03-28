@@ -2,6 +2,10 @@
 .v-align-inner {display:table-cell;vertical-align:middle;}
 
 /*Typography*/
+body {
+	font-family:$sans-serif;
+}
+
 .h1-style,
 .h1-styles,
 .h1_style,
@@ -1239,7 +1243,278 @@ section {
 
 
 
+//Footer
+footer {
+	background:rgba(242,242,242,0.5);
+}
+.breadcrumb_container .house_icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+}
+.breadcrumb_container p {
+	display:inline-block;
+	z-index:100;
+	position:relative;
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		margin: .5rem 0 0 .5rem;
+		color: #333740;
+		font-size:0.625rem;
+		text-decoration:none;
+		font-weight: bold;
+		line-height:0.750rem;
+		color:$dark-gray;
+	}
+}
+footer {
+    overflow: auto;
+    z-index: 200;
+    padding: 1rem 3rem;
+    background: #fff;
+    text-align: left;
+    clear: both
+}
 
+@media (max-width: 64em) {
+    footer {
+        display: none
+    }
+}
+
+@media (max-width: 30.0625em) {
+    footer {
+        padding: 1rem 1rem
+    }
+}
+
+footer p.copyright {
+    float: right;
+    margin: 0;
+    font-size: .75rem
+}
+
+@media (max-width: 64em) {
+    footer ul.site_footer_links {
+        display: none
+    }
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 0 0 1.25rem;
+    font-size: .8rem
+}
+
+footer li:first-child {
+    padding-left: 0rem
+}
+
+@media (max-width: 48em) {
+    footer li {
+        font-size: .9rem;
+        padding: 0 .5rem
+    }
+}
+
+@media (max-width: 40em) {
+    footer li {
+        display: block;
+        padding: 0 0 1.5rem 0
+    }
+    footer li:last-child {
+        padding: 0
+    }
+}
+
+footer a {
+    color: #002d5b
+}
+
+.careers_footer {
+    text-align: left
+}
+
+@media (max-width: 64em) {
+    .careers_footer {
+        padding: 1rem 2rem;
+        text-align: left
+    }
+}
+
+.careers_footer ul {
+    padding-bottom: 1.5rem
+}
+
+@media (max-width: 64em) {
+    .careers_footer ul {
+        padding-bottom: .75rem
+    }
+}
+
+.careers_footer li {
+    display: inline-block;
+    padding: 0 0 0 1.25rem;
+    font-size: .8rem
+}
+
+.careers_footer li:first-child {
+    padding-left: 0rem
+}
+
+@media (max-width: 64em) {
+    .careers_footer li {
+        display: block;
+        padding: .5rem 0
+    }
+}
+
+.careers_footer li a {
+    font-size: .8rem;
+    color: #002d5b
+}
+
+.careers_footer .disclaimer {
+    margin: .5rem 0;
+    font-size: .8rem
+}
+footer .row {
+    padding: 0
+}
+
+footer .logo_container {
+    text-align: left
+}
+
+footer .logo_container img {
+    width: 121px;
+    height: auto
+}
+
+
+
+
+
+
+.footer-info-container {
+	p, a {
+		font-size: 0.750rem;
+		font-weight: 600;
+		color: #444444;
+		letter-spacing: 0em;
+		line-height: 1.25rem;
+		text-align: left;
+	}
+	p {
+		&:first-child {
+			margin-bottom:2rem;
+		}
+		&:nth-child(2) {
+			margin-bottom:.25rem;
+		}
+	}
+	a {
+		font-weight: bold;
+		text-decoration:none;
+	}
+	.icon {
+		font-weight:normal;
+	}
+	ul {
+		li {
+			padding: 0;
+			text-align: left;
+			display: block;
+			margin-bottom: .5em;
+		}
+	}
+	.logo_container {
+		a {
+			display:inline-block;
+			margin-bottom:2rem;
+		}
+	}
+	.follow {
+		margin-top:0rem;
+		li {
+			float:left;
+			margin-right:.5rem;
+			
+		}
+		&:after {
+			display: block;
+			content: '';
+			clear: both;
+		}
+	}
+}
+
+@media (max-width: 30.0625em) {
+    .follow {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 30.0625em) {
+    .footer-info-container ul li {
+        margin-bottom: 1rem
+    }
+}
+
+.footer-info-container ul li a {
+    color: #00A8E1
+}
+
+.site_footer_links {
+	text-align: left;
+	li {
+		a {
+			font-family:$sans-serif;
+			font-size:0.625rem;
+			line-height:0.750rem;
+			color: $dark-gray;
+			text-decoration:none;
+		}
+	}
+}
+
+.fix {
+    padding: 0;
+    margin: 0 auto
+}
+.footer-nav ul {
+    display: block;
+    float: left;
+    width: 50%;
+    margin:0 auto;
+}
+
+.breadcrumb_container {
+    position: relative;
+    width: 100%;
+    padding: .75rem 3rem;
+}
+.texture_bg, .mod_container.highlights_intro {
+    background: url(/assets/img/texture.jpg);
+}
+.white_gradient_bottom:before, .mod_container.highlights_intro:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+//End Footer
 
 
 
