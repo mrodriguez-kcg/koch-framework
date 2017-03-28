@@ -47,12 +47,12 @@ $( ".burger" ).click(function() {
   $('header').toggleClass("lock");
   console.log("nav-opened");
 });
-$(".has-sub").click(function() {
-    $(this).find(".mobile-sub-nav").addClass("sub-open").removeClass("sub-close");
-    console.log("sub-opened");
-});
-$(".mobile-nav-back").click(function(e) {
-    e.stopPropagation();
-    $(this).parent(".mobile-sub-nav.sub-open").removeClass("sub-open").addClass("sub-close");
-    console.log("sub-closed");
-});
+// $(".has-sub").click(function() {
+//     $(this).find(".mobile-sub-nav").addClass("sub-open").removeClass("sub-close");
+//     console.log("sub-opened");
+// });
+// $(".mobile-nav-back").click(function(e) {
+//     e.stopPropagation();
+//     $(this).parent(".mobile-sub-nav.sub-open").removeClass("sub-open").addClass("sub-close");
+//     console.log("sub-closed");
+// });
