@@ -598,61 +598,7 @@ nav.main-menu {
 }
 .logo-path {
 	fill:#fff;
-	// -webkit-animation-name: fadeIn;
-	// animation-name: fadeIn;
-	// -webkit-animation-duration: .5s;
-	// animation-duration: .5s;
-	// -webkit-animation-fill-mode: both;
-	// animation-fill-mode: both;
-	// -webkit-animation-delay: 1s;
-	// animation-delay: 1s;
 }
-.logo-k.on, .logo-o.on, .logo-c.on, .logo-h.on, .logo-tm.on {
-	//opacity:1;
-}
-
-// .on.logo-k,
-// .on.logo-o,
-// .on.logo-c,
-// .on.logo-h,
-// .on.logo-tm {
-// 	-webkit-animation-name: fadeIn;
-// 	animation-name: fadeIn;
-// 	-webkit-animation-duration: .5s;
-// 	animation-duration: .5s;
-// 	-webkit-animation-delay: 1s;
-// 	animation-delay: 1s;
-// }
-// .on-quick.logo-k,
-// .on-quick.logo-o,
-// .on-quick.logo-c,
-// .on-quick.logo-h,
-// .on-quick.logo-tm {
-// 	-webkit-animation-name: fadeInLeft;
-// 	animation-name: fadeInLeft;
-// 	-webkit-animation-duration: .2s;
-// 	animation-duration: .2s;
-// 	-webkit-animation-delay: 0s;
-// 	animation-delay: 0s;
-// }
-// .off.logo-k,
-// .off.logo-o,
-// .off.logo-c,
-// .off.logo-h,
-// .off.logo-tm {
-// 	-webkit-animation-name: fadeOutLeft;
-// 	animation-name: fadeOutLeft;
-// 	-webkit-animation-duration: .2s;
-// 	animation-duration: .2s;
-// 	-webkit-animation-delay: .2s;
-// 	animation-delay: .2s;
-// }
-// .nav-down .koch-logo,
-// .nav-up .koch-logo {
-// 	width:200px;
-// }
-
-
 
 
 
@@ -675,27 +621,32 @@ nav.main-menu {
 .cta {
 	display:block;
 	width:100%;
+	&.cta-with-background {
+		background-repeat:none;
+		background-position:center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	&.cta-large {
+		padding-top:15rem;
+		padding-bottom:15rem;
+	}
+	&.cta-medium {
+		padding-top:10rem;
+		padding-bottom:10rem;
+	}
+	&.cta-small {
+		padding-top:5rem;
+		padding-bottom:5rem;	
+	}
+	p {
+		margin-bottom:0;
+	}
 }
-.cta-with-background {
-	background-repeat:none;
-	background-position:center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.cta-large {
-	padding-top:15rem;
-	padding-bottom:15rem;
-}
-.cta-medium {
-	padding-top:10rem;
-	padding-bottom:10rem;
-}
-.cta-small {
-	padding-top:5rem;
-	padding-bottom:5rem;	
-}
+
+
 
 
 
@@ -987,7 +938,12 @@ section {
 		position:relative;
 	}
 	.module {
-		background:$light-gray;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position:center;
+		background-color:$light-gray;
 		text-align:center;
 	}
 	.text-module {
@@ -1134,9 +1090,6 @@ section {
 			border-left: 20px solid transparent;
 		}
 	}
-
-
-
 	//temp
 	&:first-child .flex-top {
 		//temp background
@@ -1273,16 +1226,9 @@ footer {
 footer {
     overflow: auto;
     z-index: 200;
-    padding: 1rem 3rem;
     background: #fff;
     text-align: left;
-    clear: both
-}
-
-@media (max-width: 64em) {
-    footer {
-        display: none
-    }
+    clear: both;
 }
 
 @media (max-width: 30.0625em) {
@@ -1496,7 +1442,6 @@ footer .logo_container img {
 .breadcrumb_container {
     position: relative;
     width: 100%;
-    padding: .75rem 3rem;
 }
 .texture_bg, .mod_container.highlights_intro {
     background: url(/assets/img/texture.jpg);
