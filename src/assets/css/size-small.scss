@@ -1,8 +1,55 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+	.h1-style,
+	.h1-styles,
+	.h1_style,
+	.h1_styles {
+		font-size: 2.75rem;
+		line-height: 2.75rem;
+		font-family:$sans-serif;
+		font-weight: 800;
+	}
+	.h2-style,
+	.h2-styles,
+	.h2_style,
+	.h2_styles {
+		display: block;
+		font-size:2.00rem;
+		font-family:$sans-serif;
+		font-weight: 400;
+		line-height:2.00rem;
+		color: #00A8E1;
+	}
+	.h3-style,
+	.h3-styles,
+	.h3_style,
+	.h3_styles {
+		font-size:1.50rem;
+		font-family:$sans-serif;
+		font-weight: 400;
+		line-height:1.50rem;
+		color: #00A8E1;
+	}
+	.h4-style,
+	.h4-styles,
+	.h4_style,
+	.h4_styles {
+		display: block;
+		font-size:1.00rem;
+		line-height:1.00rem;
+		font-family:$sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
 	.column, .columns { 
 		padding-right:1rem;
 		padding-left:1rem;
+	}
+	blockquote {
+		font-size:1rem;
+	}
+	p {
+		font-size:1rem;
 	}
 	//Mobile Nav
 	.navigation-container {

@@ -6,6 +6,7 @@ body {
 	font-family:$sans-serif;
 }
 
+h1,
 .h1-style,
 .h1-styles,
 .h1_style,
@@ -14,8 +15,9 @@ body {
 	font-family:$sans-serif;
 	font-weight: 800;
 	line-height:3.938rem;
-	color: #00A8E1;
+	color:$blue;
 }
+h2,
 .h2-style,
 .h2-styles,
 .h2_style,
@@ -25,8 +27,9 @@ body {
 	font-family:$sans-serif;
 	font-weight: 400;
 	line-height:2.688rem;
-	color: #00A8E1;
+	color:$blue;
 }
+h3,
 .h3-style,
 .h3-styles,
 .h3_style,
@@ -35,8 +38,9 @@ body {
 	font-family:$sans-serif;
 	font-weight: 400;
 	line-height:2.125rem;
-	color: #00A8E1;
+	color:$blue;
 }
+h4,
 .h4-style,
 .h4-styles,
 .h4_style,
@@ -72,7 +76,7 @@ p.white a {
 	text-decoration:underline;
 }
 ul, ol {
-	margin-left:0;
+	margin-left:1rem;
 }
 li {
 	font-size:.875rem;
@@ -96,6 +100,58 @@ blockquote {
 	font-family:$slab;
 }
 
+/*Background Colors*/
+.black-bg {
+	background:$black;
+}
+.white-bg {
+	background:$white;
+}
+.dark-gray-bg {
+	background:$dark-gray;
+}
+.gray-bg {
+	background:$gray;
+}
+.light-gray-bg {
+	background:$light-gray;
+}
+.dark-blue-bg {
+	background:$dark-blue;
+}
+.blue-bg {
+	background:$blue;
+}
+.light-blue-bg {
+	background:$light-blue;
+}
+
+/*Colors*/
+.black {
+	color:$black;
+}
+.white {
+	color:$white;
+}
+.dark-gray {
+	color:$dark-gray;
+}
+.gray {
+	color:$gray;
+}
+.light-gray {
+	color:$light-gray;
+}
+.dark-blue {
+	color:$dark-blue;
+}
+.blue {
+	color:$blue;
+}
+.light-blue {
+	color:$light-blue;
+}
+
 /*Tools*/
 .text-center {
 	text-align:center;
@@ -117,40 +173,6 @@ blockquote {
 }
 .no-padding-right {
 	padding-right:0;
-}
-
-/*Background Colors*/
-.white-bg {
-	background:$white;
-}
-.dark-gray-bg {
-	background:$dark-gray;
-}
-.black-bg {
-	background:$black;
-}
-.blue-bg {
-	background:$blue;
-}
-.dark-blue-bg {
-	background:$dark-blue;
-}
-
-/*Colors*/
-.white {
-	color:$white;
-}
-.dark-gray {
-	color:$dark-gray;
-}
-.black {
-	color:$black;
-}
-.blue {
-	color:$blue;
-}
-.dark-blue {
-	color:$dark-blue;
 }
 
 /*Input Fields*/
@@ -1093,7 +1115,7 @@ section {
 	//temp
 	&:first-child .flex-top {
 		//temp background
-		background:$soft-blue;
+		background:$dark-blue;
 	}
 	&:nth-child(2) .flex-top {
 		//temp background
