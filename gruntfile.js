@@ -31,14 +31,7 @@ module.exports = function(grunt) {
             options: {},
             files: {
               "dist/index.html": "src/index.html",
-              "dist/large-screen.html": "src/large-screen.html",
-              "dist/amp-test.html": "src/amp-test.html",
-              "dist/modules-full-width.html": "src/modules-full-width.html",
-              "dist/modules-headers.html": "src/modules-headers.html",
-              "dist/modules-home.html": "src/modules-home.html",
-              "dist/modules-partial-width.html": "src/modules-partial-width.html",
-              "dist/build/home.html": "src/build/home.html",
-              "dist/build/whatwedo.html": "src/build/whatwedo.html"
+              "dist/build/home.html": "src/build/home.html"
             }
         }
     },
