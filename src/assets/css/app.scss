@@ -11,7 +11,7 @@
 // 	box-shadow: 0 0 5px rgba(255,157,24,.5);
 // } 
 section.temp-label {
-	background:#777;
+	background:$dark-gray;
 	width:100%;
 	border-radius:0px;
 	padding:5rem 0;
@@ -34,6 +34,13 @@ section.temp-label {
 }
 .backgrounds {
 	padding:2rem 0;
+}
+section {
+	padding-top:0rem;
+	padding-bottom:0rem;
+}
+.temp-margin {
+	margin:2rem auto;
 }
 //END Do not include in build
 
