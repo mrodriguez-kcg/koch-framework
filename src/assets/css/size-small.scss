@@ -1,5 +1,56 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+	.h1-style,
+	.h1-styles,
+	.h1_style,
+	.h1_styles {
+		font-size: 2.75rem;
+		line-height: 2.75rem;
+		font-family:$sans-serif;
+		font-weight: 800;
+	}
+	.h2-style,
+	.h2-styles,
+	.h2_style,
+	.h2_styles {
+		display: block;
+		font-size:2.00rem;
+		font-family:$sans-serif;
+		font-weight: 400;
+		line-height:2.00rem;
+		color: #00A8E1;
+	}
+	.h3-style,
+	.h3-styles,
+	.h3_style,
+	.h3_styles {
+		font-size:1.50rem;
+		font-family:$sans-serif;
+		font-weight: 400;
+		line-height:1.50rem;
+		color: #00A8E1;
+	}
+	.h4-style,
+	.h4-styles,
+	.h4_style,
+	.h4_styles {
+		display: block;
+		font-size:1.00rem;
+		line-height:1.00rem;
+		font-family:$sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.column, .columns { 
+		padding-right:1rem;
+		padding-left:1rem;
+	}
+	blockquote {
+		font-size:1rem;
+	}
+	p {
+		font-size:1rem;
+	}
 	//Mobile Nav
 	.navigation-container {
 		height:3.75rem;
@@ -189,18 +240,6 @@
 			}
 		}
 	}
-
-
-
-
-	#toggle {
-		// -webkit-animation-name: fadeIn;
-		// animation-name: fadeIn;
-		// -webkit-animation-duration: .5s;
-		// animation-duration: .5s;
-		// -webkit-animation-delay: 1s;
-		// animation-delay: 1s;
-	}
 	.burger {
 		position: relative;
 		top:8px;
@@ -212,7 +251,6 @@
 		z-index:999;
 		float:right;
 	}
-
 	.burger span {
 		position: absolute;
 		top: 50%;
@@ -220,7 +258,6 @@
 		display: block;
 		width: 100%;
 		height: 3px;
-		/*     margin-top: -2px; */
 		background-color: #fff;
 		font-size: 0px;
 		-webkit-touch-callout: none;
@@ -229,23 +266,17 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		/*     -webkit-transition: background-color 0.3s;
-		transition: background-color 0.3s; */
 		-webkit-transition: all 0.25s ease-in-out;
 		-moz-transition: all 0.25s ease-in-out;
 		transition: all 0.25s ease-in-out;
-
 	}
-
 	.open.burger span {
 		background-color: transparent;
 	}
-
 	.burger span:before {
 		-webkit-transform: translateY(-400%);
 		transform: translateY(-400%);
 	}
-
 	.burger span:before, .burger span:after {
 		position: absolute;
 		left: 0;
@@ -256,19 +287,10 @@
 		-webkit-transition: -webkit-transform 0.25s;
 		transition: transform 0.25s;
 	}
-
 	.burger span:after {
 		-webkit-transform: translateY(400%);
 		transform: translateY(400%);
 	}
-
-
-
-
-
-
-
-
 	.open.burger span:before {
 		-webkit-transform: translateY(0) rotate(45deg);
 		transform: translateY(0) rotate(45deg);
@@ -279,24 +301,6 @@
 	}
 	//END Mobile Nav
 
-
-
-
-
-	// Testing singular SVG animation, may leave off of final build.
-	// .mark {
-	// 	&.on {
-	// 		transform:matrix(1, 0, 0, 1, 0, 0);
-	// 	}
-	// 	&.off {
-	// 		transform:matrix(1.5, 0, 0, 1.5, 0, -7);
-	// 	}
-	// }
-
-
-	// .label {
-	// 	display:none;
-	// }
 	.horizontal-50-50 {
 		display:flex;
 		flex-flow:row wrap;
@@ -305,15 +309,18 @@
 		overflow:initial;
 		.module {
 			order:1;
-			padding-top:2rem;
-			padding-bottom:2rem;
+			padding-top:4rem;
+			padding-bottom:4rem;
 		}
 		.text-module {
 			order:2;
-			padding-right:.375rem;
-			padding-left:.375rem;
+			padding:2rem;
+			text-align:left;
 			&.arrow-right::after, .arrow-left::after {
 				display:none;
+			}
+			p {
+				margin-bottom:0;
 			}
 		}
 	}
@@ -348,6 +355,76 @@
 			border-left: 20px solid transparent;
 		}
 	}
+	.cta {
+		&.cta-with-background {
+			background-repeat:none;
+			background-position:center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		&.cta-large {
+			padding-top:2rem;
+			padding-bottom:2rem;
+		}
+		&.cta-medium {
+			padding-top:2rem;
+			padding-bottom:2rem;
+		}
+		&.cta-small {
+			padding-top:2rem;
+			padding-bottom:2rem;	
+		}
+		p {
+			margin-bottom:0;
+		}
+	}
+	.stat-container {
+		margin-bottom:1rem;
+	}
+
+	//Home
+	.h1-custom {
+		font-size: 2.75rem;
+		line-height: 2.5rem;
+	}
+	.btn-container {
+		p {
+			width:90%;
+		}
+		.button {
+			width:100%;
+		}
+	}
+
+	//Footer
+	footer {
+		padding-left:0;
+		padding-right:0;
+	}
+	.breadcrumb_container {
+		padding-left:0;
+		padding-right:0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

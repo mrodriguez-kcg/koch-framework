@@ -28,7 +28,7 @@ function hasScrolled() {
     } 
         
     ScrollTop = st;
-    console.log(st)
+    // console.log(st)
 }
 //End Navigation show/hide
 
