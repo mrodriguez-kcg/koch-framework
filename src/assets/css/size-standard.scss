@@ -181,6 +181,9 @@ blockquote {
 }
 
 /*Tools*/
+.uppercase {
+	text-transform:uppercase;
+}
 .text-center {
 	text-align:center;
 }
@@ -1093,36 +1096,6 @@ section {
 		padding-bottom:5rem;
 	}
 }
-
-
-// .cta {
-// 	display:block;
-// 	width:100%;
-// 	&.cta-with-background {
-// 		background-repeat:no-repeat;
-// 		background-position:center center;
-// 		-webkit-background-size: cover;
-// 		-moz-background-size: cover;
-// 		-o-background-size: cover;
-// 		background-size: cover;
-// 	}
-// 	&.cta-large {
-// 		padding-top:15rem;
-// 		padding-bottom:15rem;
-// 	}
-// 	&.cta-medium {
-// 		padding-top:10rem;
-// 		padding-bottom:10rem;
-// 	}
-// 	&.cta-small {
-// 		padding-top:5rem;
-// 		padding-bottom:5rem;	
-// 	}
-// 	p {
-// 		margin-bottom:0;
-// 	}
-// }
-
 .vertical-50-50 {
 	position:relative;
 	padding-right:0;
@@ -1132,8 +1105,6 @@ section {
 		position:relative;
 		padding-left:2rem;
 		padding-right:2rem;
-		//temp no background
-		background:none;
 	}
 	.flex-bottom, .flex-top {
 		height:25.000rem;
@@ -1187,6 +1158,12 @@ section {
 	}
 	.flex-top {
 		height:25rem;
+		background-repeat:no-repeat;
+		background-position:center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	.flex-bottom {
 		height:23.125rem;
@@ -1209,20 +1186,21 @@ section {
 			border-left: 20px solid transparent;
 		}
 	}
-	//temp
-	&:first-child .flex-top {
-		//temp background
-		background:$dark-blue;
+}
+.stat-container {
+	padding-left:2rem;
+	padding-right:2rem;
+	.stat-image, span, p {
+		display:block;
+		margin-bottom:0.5rem;
 	}
-	&:nth-child(2) .flex-top {
-		//temp background
-		background:$blue;
+	span {
+		font-size: 2.5rem;
+		font-weight:400;
 	}
-	&:last-child .flex-top {
-		//temp background
-		background:$light-blue;
+	p {
+		font-size:1rem;
 	}
-
 }
 
 .home-featured {
@@ -1489,6 +1467,7 @@ footer .logo_container img {
 		font-weight:normal;
 	}
 	ul {
+		margin-left:0;
 		li {
 			padding: 0;
 			text-align: left;
@@ -1536,6 +1515,7 @@ footer .logo_container img {
 
 .site_footer_links {
 	text-align: left;
+	margin-left:0;
 	li {
 		a {
 			font-family:$sans-serif;
