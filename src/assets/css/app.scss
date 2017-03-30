@@ -15,6 +15,13 @@ section.label {
 	width:100%;
 	border-radius:0px;
 	padding:5rem 0;
+	h1 {
+		color:#fff;
+		text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+
+	}
 }
 .temp-social-container li {
 	float:left;
